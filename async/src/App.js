@@ -1,11 +1,11 @@
 import React, {useEffect} from "react";
 import './App.css';
 import Monster from "./components/Monster"
-import {fetchMonster} from "./actions"
+import {fetchMonsterEps} from "./actions"
 import {connect} from "react-redux"
 
 function App(props) {
-  console.log("test", props.episodes)
+  //console.log("test", props.episodes)
   
   // useEffect(() => {
   //   props.fetchMonster()
@@ -21,10 +21,10 @@ function App(props) {
     <div className="App">
       <h1>Monster Episode List</h1>
 
-      <button onClick={() => props.dispatch(fetchMonster())}>Display Episodes</button>
+      <button onClick={() => props.dispatch(fetchMonsterEps())}>Display Episodes</button>
 
       <div className="container">
-        {props.isFetching ? <h2>Loading Info</h2> : null}
+        {props.isFetching ? <h2>Loading Episodes</h2> : null}
         {props.error && <p>{props.error}</p>}
         {props.episodes.map(episode => <Monster key={episode.episode_id} episode={episode} />)}
       </div>
@@ -35,11 +35,11 @@ function App(props) {
 }
 
 const mapDispatchToProps = {
-  fetchMonster
+  fetchMonsterEps
 }
 
 const mapStateToProps = state => {
-  console.log("App", state)
+  //console.log("App", state)
   return{
     episodes: state.episodes,
     isFetching: state.isFetching,

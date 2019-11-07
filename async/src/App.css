@@ -1,6 +1,10 @@
+html {
+  font-size: 62.2%;
+}
+
 html .App {
   margin: auto;
-  width: 60%;
+  width: 80%;
   text-align: center;
 }
 
@@ -20,5 +24,21 @@ html .App .container .card {
   padding: 10px;
   border-radius: 20px;
   width: 250px;
+}
+
+html .App .container .card .id {
+  font-size: 1.1rem;
+}
+
+html .App .container .card .title {
+  font-size: 1.7rem;
+}
+
+html .App .container .card .jpn {
+  font-size: 1.4rem;
+}
+
+html .App .container .card .aird {
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=App.css.map */
