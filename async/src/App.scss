@@ -1,0 +1,23 @@
+html{
+
+    .App{
+        margin: auto;
+        width: 60%;
+        text-align: center;
+        .container{
+        
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card{
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            width: 250px;
+        }
+    }
+}
+}

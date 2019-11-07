@@ -1,0 +1,24 @@
+html .App {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+html .App .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html .App .container .card {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+}
+/*# sourceMappingURL=App.css.map */
