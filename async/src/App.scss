@@ -1,0 +1,42 @@
+html{
+
+    font-size: 62.2%;
+
+    .App{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        .container{
+        
+        
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+
+        .card{
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            width: 250px;
+
+            .id{
+                font-size: 1.1rem
+            }
+
+            .title{
+                font-size: 1.7rem
+            }
+
+            .jpn{
+                font-size: 1.4rem
+            }
+
+            .aird{
+                font-size: 1.1rem
+            }
+        }
+    }
+}
+}
